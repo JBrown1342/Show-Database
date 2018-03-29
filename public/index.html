@@ -5,15 +5,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Home Page</title>
   </head>
-  <body id=>
-    <form class="search_for_shows" action="/search" method="post">
-      <label for="artist_name">Search for shows by artist</label>
-      <input type="text" name="artist_name" value="">
+  <body id="body">
+
+    <div><a href= "http://localhost:3000/add_artist"><strong>Add Artist</strong></a></div>
+    <div><a href= "http://localhost:3000/add_venue"><strong>Add Venue</strong></a></div>
+    <div><a href= "http://localhost:3000/add_show"><strong>Add Show</strong></a></div>
+
+
+    <form name="search_for_shows" action="/search" method="post">
+      <label for="select_artist">Search for shows by artist</label>
+      <select name="select_artist">
+        <option value="@@artist_list_1@@"></option>
+      </select>
       <input type="submit" name="submit_search" value="Search">
     </form>
 
-    <script type="text/javascript">
-
-    </script>
   </body>
 </html>
